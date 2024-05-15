@@ -1,24 +1,52 @@
 # ARRAYS AND TUPPLES IN PYTHON
 
 
-# Program 1
+Linear search in python 
 
-```Python 
+```Python
+arr = [5, 8, 10, 15, 20]
+target = 15
 
-def fibonacci(n):
-    fib_series = [0, 1]
-    for i in range(2, n):
-        fib_series.append(fib_series[-1] + fib_series[-2])
-    return fib_series[:n]
+found = False
+for i in range(len(arr)):
+    if arr[i] == target:
+        print(f"Element {target} found at index {i}.")
+        found = True
+        break
 
-n = int(input("Enter the number of terms: "))
-print(fibonacci(n))
+if not found:
+    print("Element not found.")
 
 
 
 ```
 
-# Python-Brick
+
+# Program 1
+
+```Python 
+
+# Define the number of terms
+n = 10
+
+# Initialize the first two terms
+a, b = 0, 1
+
+# Print the first two terms
+print(a, end=" ")
+print(b, end=" ")
+
+# Generate the rest of the series
+for _ in range(2, n):
+    c = a + b
+    print(c, end=" ")
+    a, b = b, c
+
+
+
+```
+
+# Python-Brick 
 certainly! Here are some basic Python terminologies for beginners:
 
 1. **Python**: A high-level, interpreted programming language known for its simplicity and readability.
